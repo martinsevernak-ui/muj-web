@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="cs"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Knihy – Martin Severňák</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header id="site-header"></header><main>
+<div class="wrap page-title"><h1>Přečtené knihy</h1><p>Vyber žánr nebo rozklikni sérii a zobraz její knihy.</p></div>
+<section class="wrap">
+  <div class="filters">
+    <button class="chip on" data-f="vse">Vše</button><button class="chip" data-f="fantasy">Fantasy</button>
+    <button class="chip" data-f="scifi">Sci-fi</button><button class="chip" data-f="naucne">Naučné</button>
+    <button class="chip" data-f="klasika">Klasika</button><button class="chip" data-f="komiks">Komiks</button>
+    <button class="chip" data-f="dobrodruzne">Dobrodružné</button><button class="chip" data-f="detske">Dětské</button>
+  </div>
+</section>
+<section class="wrap book-section">
+  <h2>Série a autoři</h2>
+  <div class="book-groups">
+    <details class="card author-group book reveal" data-z="fantasy">
+      <summary><span class="author-title">Harry Potter</span><span class="author-meta">J. K. Rowlingová · 7 knih</span></summary>
+      <div class="author-books">
+        <ol data-author="J. K. Rowlingová">
+          <li>Harry Potter a Kámen mudrců</li>
+          <li>Harry Potter a Tajemná komnata</li>
+          <li>Harry Potter a Vězeň z Azkabanu</li>
+          <li>Harry Potter a Ohnivý pohár</li>
+          <li>Harry Potter a Fénixův řád</li>
+          <li>Harry Potter a Princ dvojí krve</li>
+          <li>Harry Potter a Relikvie smrti</li>
+        </ol>
+        <p class="muted"><span class="stars">★★★★★</span> Kniha, díky které jsem začal číst.</p>
+      </div>
+    </details>
+
+    <details class="card author-group book reveal" data-z="komiks">
+      <summary><span class="author-title">Asterix a Obelix</span><span class="author-meta">René Goscinny a Albert Uderzo · 36 knih</span></summary>
+      <div class="author-books">
+        <h3>René Goscinny a Albert Uderzo</h3>
+        <ol data-author="René Goscinny a Albert Uderzo">
+          <li>Asterix z Galie (Astérix le Gaulois)</li>
+          <li>Asterix a zlatý srp (La Serpe d'or)</li>
+          <li>Asterix a Gótové (Astérix et les Goths)</li>
+          <li>Asterix gladiátorem (Astérix gladiateur)</li>
+          <li>Asterix a cesta kolem Galie (Le Tour de Gaule d'Astérix)</li>
+          <li>Asterix a Kleopatra (Astérix et Cléopâtre)</li>
+          <li>Souboj náčelníků (Le Combat des chefs)</li>
+          <li>Asterix v Británii (Astérix chez les Bretons)</li>
+          <li>Asterix a Normani (Astérix et les Normands)</li>
+          <li>Asterix legionářem (Astérix légionnaire)</li>
+          <li>Asterix a štít z Arverne (Le Bouclier arverne)</li>
+          <li>Asterix a olympijské hry (Astérix aux Jeux olympiques)</li>
+          <li>Asterix a kotlík (Astérix et le chaudron)</li>
+          <li>Asterix v Hispánii (Astérix en Hispanie)</li>
+          <li>Nesvár (La Zizanie)</li>
+          <li>Asterix ve Švýcarsku (Astérix chez les Helvètes)</li>
+          <li>Sídliště bohů (Le Domaine des dieux)</li>
+          <li>Caesarův vavřínový věnec (Les Lauriers de César)</li>
+          <li>Věštec (Le Devin)</li>
+          <li>Asterix na Korsice (Astérix en Corse)</li>
+          <li>Dárek od Caesara (Le Cadeau de César)</li>
+          <li>Velká plavba (La Grande Traversée)</li>
+          <li>Obelix &amp; spol. (Obélix et Compagnie)</li>
+          <li>Asterix u Belgů (Astérix chez les Belges)</li>
+        </ol>
+        <h3>Éra Alberta Uderza (samostatná tvorba)</h3>
+        <ol start="25" data-author="Albert Uderzo">
+          <li>Velký příkop (Le Grand Fossé)</li>
+          <li>Asterixova odysea (L'Odyssée d'Astérix)</li>
+          <li>Asterixovo synáček (Le Fils d'Astérix)</li>
+          <li>Asterix na Indickém oceánu (Astérix chez Rahàzade)</li>
+          <li>Růže a meč (La Rose et le Glaive)</li>
+          <li>Obelix a lodní lístek (La Galère d'Obélix)</li>
+          <li>Asterix a Latraviata (Astérix et Latraviata)</li>
+          <li>Asterix a slavný návrat (Astérix et la Rentrée gauloise) – sbírka krátkých příběhů</li>
+          <li>Nebe mu padá na hlavu (Le ciel lui tombe sur la tête)</li>
+          <li>Narozeniny Asterixe a Obelixe – Zlatá kniha (L'Anniversaire d'Astérix et Obélix - Le Livre d'or)</li>
+        </ol>
+        <ol start="38" data-author="Jean-Yves Ferri a Didier Conrad">
+          <li>Vercingetorixova dcera (La Fille de Vercingétorix)</li>
+          <li>Asterix a gryf (Astérix et le Griffon)</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="card author-group book reveal" data-z="fantasy">
+      <summary><span class="author-title">Hraničářův učeň</span><span class="author-meta">John Flanagan · 14 knih</span></summary>
+      <div class="author-books">
+        <ol data-author="John Flanagan">
+          <li><a href="https://www.google.com/search?kgmid=%2Fm%2F0f2ntf&amp;q=Rozvaliny+Gorlanu" target="_blank" rel="noopener noreferrer">Rozvaliny Gorlanu</a> (2004)</li>
+          <li><a href="https://www.google.com/search?kgmid=%2Fm%2F0f2p1k&amp;q=Ho%C5%99%C3%ADc%C3%AD+most" target="_blank" rel="noopener noreferrer">Hořící most</a> (2005)</li>
+          <li><a href="https://www.google.com/search?kgmid=%2Fm%2F0ffy86&amp;q=Ledov%C3%A1+zem%C4%9B" target="_blank" rel="noopener noreferrer">Ledová země</a> (2005)</li>
+          <li><a href="https://www.google.com/search?kgmid=%2Fm%2F02q429s&amp;q=Nositel%C3%A9+dubov%C3%A9ho+listu" target="_blank" rel="noopener noreferrer">Nositelé dubového listu</a> (2006)</li>
+          <li><a href="https://www.google.com/search?kgmid=%2Fm%2F02rxjx2&amp;q=V%C3%BDkupn%C3%A9+za+Eraka" target="_blank" rel="noopener noreferrer">Výkupné za Eraka</a> (2007) – dějově se odehrává mezi 4. a 5. dílem, autor ji ale napsal a vydal později.</li>
+          <li><a href="https://www.google.com/search?kgmid=%2Fm%2F027046k&amp;q=%C4%8Carod%C4%9Bj+na+severu" target="_blank" rel="noopener noreferrer">Čaroděj na severu</a> (2006)</li>
+          <li><a href="https://www.google.com/search?kgmid=%2Fm%2F027vkx4&amp;q=Obl%C3%A9h%C3%A1n%C3%AD+Macindawu" target="_blank" rel="noopener noreferrer">Obléhání Macindawu</a> (2006)</li>
+          <li><a href="https://www.google.com/search?kgmid=%2Fm%2F04y69bc&amp;q=Kr%C3%A1lov%C3%A9+Clonmelu" target="_blank" rel="noopener noreferrer">Králové Clonmelu</a> (2008)</li>
+          <li><a href="https://www.google.com/search?kgmid=%2Fm%2F09gn3bg&amp;q=Halt+v+nebezpe%C4%8D%C3%AD" target="_blank" rel="noopener noreferrer">Halt v nebezpečí</a> (2010)</li>
+          <li><a href="https://www.google.com/search?kgmid=%2Fm%2F0dln32f&amp;q=C%C3%ADsa%C5%99+Nihon-d%C5%BEinu" target="_blank" rel="noopener noreferrer">Císař Nihon-džinu</a> (2011)</li>
+          <li><a href="https://www.google.com/search?kgmid=%2Fm%2F0h96csh&amp;q=Ztracen%C3%A9+p%C5%99%C3%ADb%C4%9Bhy" target="_blank" rel="noopener noreferrer">Ztracené příběhy</a> (2011) – sbírka povídek doplňující osudy postav.</li>
+          <li><a href="https://www.google.com/search?kgmid=%2Fm%2F0w1dhj8&amp;q=Kr%C3%A1lovsk%C3%A1+hrani%C4%8D%C3%A1%C5%99ka" target="_blank" rel="noopener noreferrer">Královská hraničářka</a> (2013)</li>
+          <li><a href="https://www.google.com/search?kgmid=%2Fg%2F11gjk1tgxf&amp;q=Klan+Rud%C3%A9+li%C5%A1ky" target="_blank" rel="noopener noreferrer">Klan Rudé lišky</a> (2018)</li>
+          <li><a href="https://www.google.com/search?kgmid=%2Fg%2F11gy75xchf&amp;q=Souboj+na+Araluenu" target="_blank" rel="noopener noreferrer">Souboj na Araluenu</a> (2019)</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="card author-group book reveal" data-z="detske">
+      <summary><span class="author-title">Dusty</span><span class="author-meta">Jan Andersen a Wolfram Hänel · 4 knihy</span></summary>
+      <div class="author-books"><ol data-author="Jan Andersen a Wolfram Hänel">
+        <li>Dusty: Kamarádi navždy (2017)</li>
+        <li>Dusty: V nebezpečí (2018)</li>
+        <li>Dusty: Vrať se domů (2018)</li>
+        <li>Dusty: Zázrak o Vánocích (2019)</li>
+      </ol></div>
+    </details>
+
+    <details class="card author-group book reveal" data-z="detske">
+      <summary><span class="author-title">Mikulášovy příběhy</span><span class="author-meta">René Goscinny · 3 knihy</span></summary>
+      <div class="author-books"><ul data-author="René Goscinny">
+        <li>Nové Mikulášovy patálie (Bezvadný vtip)</li>
+        <li>Nové Mikulášovy patálie (Sváteční oběd)</li>
+        <li>Mikulášovy přestávky</li>
+      </ul></div>
+    </details>
+  </div>
+</section>
+<section class="wrap book-section">
+  <h2>Samostatné knihy</h2>
+  <div class="grid">
+    <article class="card book reveal" data-z="fantasy dobrodruzne"><div class="cover" style="background:#ff8a3d"></div><h3>Hobit</h3><span class="tag">J. R. R. Tolkien</span></article>
+    <article class="card book reveal" data-z="dobrodruzne klasika"><div class="cover" style="background:#2ec4b6"></div><h3>Hoši od Bobří řeky</h3><span class="tag">Jaroslav Foglar</span></article>
+    <article class="card book reveal" data-z="scifi"><div class="cover" style="background:#2d3a5e"></div><h3>Jirkův tajný klíč k Vesmíru</h3><span class="tag">Lucy a Stephen Hawkingovi</span></article>
+    <article class="card book reveal" data-z="detske"><div class="cover" style="background:#ff8a3d"></div><h3>Hotel U zvířátek 1: Pro lásku štěněte</h3><span class="tag">Kate Finchová</span></article>
+    <article class="card book reveal" data-z="detske"><div class="cover" style="background:#ffc857"></div><h3>Klára a hříbátko</h3><span class="tag">Pia Hagmarová</span></article>
+    <article class="card book reveal" data-z="detske"><div class="cover" style="background:#ff6b8b"></div><h3>Vánoční překvapení</h3><span class="tag"><a href="https://www.knihydobrovsky.cz/autori/daisy-bellova-240156" target="_blank" rel="noopener noreferrer">Daisy Bellová</a></span></article>
+    <article class="card book reveal" data-z="detske"><div class="cover" style="background:#3a5bff"></div><h3>Klub Tygrů (Poklad u Bobří řeky)</h3><span class="tag"><a href="https://www.albatrosmedia.cz/autori/31149/thomas-brezina/" target="_blank" rel="noopener noreferrer">Thomas Brezina</a></span></article>
+    <article class="card book reveal" data-z="naucne"><div class="cover" style="background:#2ec4b6"></div><h3>Kluci, to musíte vědět! A dospívání bude v pohodě</h3><span class="tag">Ilona Einwohlt</span></article>
+  </div>
+</section>
+</main><footer id="site-footer"></footer><script src="js/script.js"></script></body></html>

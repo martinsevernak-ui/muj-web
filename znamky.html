@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Známky ve škole – Martin Severňák</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header id="site-header"></header><main>
+<div class="wrap page-title"><h1>Známky ve škole</h1><p>Zadej své známky a zjisti orientační průměr. V českém systému je 1 nejlepší a 5 nejhorší známka.</p></div>
+<section class="wrap">
+  <form id="grades-form" class="card">
+    <div id="grade-subjects">
+      <div class="grade-subject">
+        <div class="grade-subject-heading">
+          <button class="subject-toggle" type="button" aria-expanded="true">
+            <span class="subject-summary-name">Předmět</span>
+            <span class="subject-summary-average">Průměr: —</span>
+            <span class="subject-chevron" aria-hidden="true">⌄</span>
+          </button>
+        </div>
+        <div class="grade-editor">
+          <label>Předmět<input class="grade-subject-name" placeholder="např. Matematika" aria-label="Název předmětu"></label>
+          <div class="grade-items">
+            <div class="grade-item">
+              <label>Známka<select class="grade-value" aria-label="Známka">
+                <option value="" selected disabled>Vyber</option>
+                <option value="1">1</option><option value="1-">1-</option>
+                <option value="2">2</option><option value="2-">2-</option>
+                <option value="3">3</option><option value="3-">3-</option>
+                <option value="4">4</option><option value="4-">4-</option><option value="5">5</option>
+              </select></label>
+              <label>Váha<select class="grade-weight" aria-label="Váha známky">
+                <option value="1" selected>1</option><option value="2">2</option><option value="3">3</option>
+                <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                <option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+              </select></label>
+              <button class="icon-btn remove-grade" type="button" aria-label="Odebrat známku">×</button>
+            </div>
+          </div>
+          <button class="btn ghost add-grade" type="button">+ Přidat známku</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="btn ghost" id="add-subject" type="button">+ Přidat předmět</button>
+      <button class="btn" type="submit">Vyhodnotit známky</button>
+    </div>
+  </form>
+  <p class="muted">Změny se automaticky ukládají v tomto prohlížeči.</p>
+  <div id="grade-results" class="card grade-result" aria-live="polite" hidden></div>
+</section>
+</main><footer id="site-footer"></footer><script src="script.js"></script></body></html>
